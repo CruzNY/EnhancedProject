@@ -8,7 +8,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = {"features/"},
-		glue = {"steps"},
+		glue = {"stepDefinitions"},
 		tags = "@SimpleFormDemo",
 		plugin = {"pretty", "html:target/cucumber-reports/newCustomer"},
 		monochrome = true
