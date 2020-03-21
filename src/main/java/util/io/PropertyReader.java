@@ -37,7 +37,6 @@ public class PropertyReader extends DriverFactory{
 	}
 	
 	public String[] getLocator(String key) {
-		
-		return null; 
+		return key.split(";");
 	}
 }

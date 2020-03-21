@@ -4,9 +4,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
+import util.io.PropertyReader;
+
 public class CommonPage extends BasePageObject{
+	PropertyReader prop = new PropertyReader();
 	public WebElement getWebElement(String key) {
-		String[] elementLocator;
+		String[] elementLocator = prop.getLocator(key);
 		String webLocatorType = elementLocator[0];
 		String webElementValu = elementLocator[1];
 		
